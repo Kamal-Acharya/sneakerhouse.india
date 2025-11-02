@@ -4,8 +4,6 @@
   "homepage": "https://Kamal-Acharya.github.io/sneaker-house",
   "private": true,
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
     "build": "next build",
     "dev": "next dev",
     "lint": "eslint .",
