@@ -1,8 +1,11 @@
 {
   "name": "my-v0-project",
   "version": "0.1.0",
+  "homepage": "https://Kamal-Acharya.github.io/sneaker-house",
   "private": true,
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "next build",
     "dev": "next dev",
     "lint": "eslint .",
@@ -44,6 +47,7 @@
     "cmdk": "1.0.4",
     "date-fns": "4.1.0",
     "embla-carousel-react": "8.5.1",
+    "gh-pages": "^6.3.0",
     "input-otp": "1.4.1",
     "lucide-react": "^0.454.0",
     "next": "16.0.0",
