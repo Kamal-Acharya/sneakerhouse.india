@@ -1,0 +1,33 @@
+{
+  "name": "Jordan",
+  "shoes": [
+    {
+      "id": "jordan-1",
+      "name": "Air Jordan 1 Retro High",
+      "image": "/Users/kamalacharya/Downloads/code/public/sneakers/jordan/jordan-sneaker.jpg",
+      "price": "$170",
+      "description": "Classic high-top sneaker"
+    },
+    {
+      "id": "jordan-2",
+      "name": "Air Jordan 1 UNC",
+      "image": "/placeholder.svg?height=400&width=400",
+      "price": "$160",
+      "description": "University of North Carolina edition"
+    },
+    {
+      "id": "jordan-3",
+      "name": "Air Jordan 1 Chicago",
+      "image": "/placeholder.svg?height=400&width=400",
+      "price": "$180",
+      "description": "Iconic red and black colorway"
+    },
+    {
+      "id": "jordan-4",
+      "name": "Air Jordan 4 Retro",
+      "image": "/placeholder.svg?height=400&width=400",
+      "price": "$190",
+      "description": "Vintage retro silhouette"
+    }
+  ]
+}

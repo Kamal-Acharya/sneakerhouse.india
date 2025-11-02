@@ -1,0 +1,47 @@
+{
+  "name": "Bug Report",
+  "description": "Report a bug or issue",
+  "title": "[BUG] ",
+  "labels": ["bug"],
+  "assignees": [],
+  "body": [
+    {
+      "type": "markdown",
+      "attributes": {
+        "value": "## Description\nDescribe the bug in detail"
+      }
+    },
+    {
+      "type": "textarea",
+      "attributes": {
+        "label": "Steps to Reproduce",
+        "description": "Exact steps to reproduce the issue",
+        "placeholder": "1. Go to...\n2. Click on...\n3. See error..."
+      },
+      "validations": {
+        "required": true
+      }
+    },
+    {
+      "type": "textarea",
+      "attributes": {
+        "label": "Expected Behavior",
+        "description": "What should happen"
+      }
+    },
+    {
+      "type": "textarea",
+      "attributes": {
+        "label": "Actual Behavior",
+        "description": "What actually happens"
+      }
+    },
+    {
+      "type": "input",
+      "attributes": {
+        "label": "Environment",
+        "description": "Browser, OS, Node version, etc."
+      }
+    }
+  ]
+}

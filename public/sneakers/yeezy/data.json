@@ -1,0 +1,33 @@
+{
+  "name": "Yeezy",
+  "shoes": [
+    {
+      "id": "yeezy-1",
+      "name": "Yeezy Boost 350 v2",
+      "image": "/placeholder.svg?height=400&width=400",
+      "price": "$250",
+      "description": "Iconic stripe pattern"
+    },
+    {
+      "id": "yeezy-2",
+      "name": "Yeezy Boost 350 v2 Bred",
+      "image": "/placeholder.svg?height=400&width=400",
+      "price": "$260",
+      "description": "Black and red colorway"
+    },
+    {
+      "id": "yeezy-3",
+      "name": "Yeezy 500",
+      "image": "/placeholder.svg?height=400&width=400",
+      "price": "$240",
+      "description": "Chunky silhouette"
+    },
+    {
+      "id": "yeezy-4",
+      "name": "Yeezy Foam Runner",
+      "image": "/placeholder.svg?height=400&width=400",
+      "price": "$200",
+      "description": "Minimalist foam design"
+    }
+  ]
+}

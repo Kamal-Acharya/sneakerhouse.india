@@ -1,0 +1,33 @@
+{
+  "name": "Nike SB",
+  "shoes": [
+    {
+      "id": "sb-1",
+      "name": "Nike SB Dunk Low Pro",
+      "image": "/placeholder.svg?height=400&width=400",
+      "price": "$145",
+      "description": "Skateboarding classic"
+    },
+    {
+      "id": "sb-2",
+      "name": "Nike SB Dunk Low Panda",
+      "image": "/placeholder.svg?height=400&width=400",
+      "price": "$150",
+      "description": "Clean monochrome design"
+    },
+    {
+      "id": "sb-3",
+      "name": "Nike SB Janoski",
+      "image": "/placeholder.svg?height=400&width=400",
+      "price": "$135",
+      "description": "Minimalist skate shoe"
+    },
+    {
+      "id": "sb-4",
+      "name": "Nike SB Grant Taylor",
+      "image": "/placeholder.svg?height=400&width=400",
+      "price": "$155",
+      "description": "Pro signature model"
+    }
+  ]
+}

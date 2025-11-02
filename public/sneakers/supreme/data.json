@@ -1,0 +1,33 @@
+{
+  "name": "Supreme",
+  "shoes": [
+    {
+      "id": "sup-1",
+      "name": "Supreme x Nike Air Max",
+      "image": "/placeholder.svg?height=400&width=400",
+      "price": "$200",
+      "description": "Supreme x Nike collab"
+    },
+    {
+      "id": "sup-2",
+      "name": "Supreme Vans",
+      "image": "/placeholder.svg?height=400&width=400",
+      "price": "$140",
+      "description": "Classic Supreme branding"
+    },
+    {
+      "id": "sup-3",
+      "name": "Supreme x Air Jordan",
+      "image": "/placeholder.svg?height=400&width=400",
+      "price": "$280",
+      "description": "Rare Supreme Jordan collab"
+    },
+    {
+      "id": "sup-4",
+      "name": "Supreme x The North Face",
+      "image": "/placeholder.svg?height=400&width=400",
+      "price": "$320",
+      "description": "Mountain boot collaboration"
+    }
+  ]
+}

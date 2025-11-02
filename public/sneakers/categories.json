@@ -1,0 +1,28 @@
+{
+  "categories": [
+    {
+      "name": "Jordan",
+      "slug": "jordan",
+      "count": 3,
+      "image": "/sneakers/jordan/jordan-sneaker.jpg"
+    },
+    {
+      "name": "Nike SB",
+      "slug": "nike-sb",
+      "count": 3,
+      "image": "/sneakers/nike-sb/nike-sb-sneaker.jpg"
+    },
+    {
+      "name": "Yeezy",
+      "slug": "yeezy",
+      "count": 2,
+      "image": "/sneakers/yeezy/yeezy-sneaker.jpg"
+    },
+    {
+      "name": "Supreme",
+      "slug": "supreme",
+      "count": 2,
+      "image": "/sneakers/supreme/supreme-sneaker.jpg"
+    }
+  ]
+}
