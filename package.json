@@ -1,7 +1,6 @@
 {
   "name": "my-v0-project",
   "version": "0.1.0",
-  "homepage": "https://Kamal-Acharya.github.io/sneaker-house",
   "private": true,
   "scripts": {
     "build": "next build",
