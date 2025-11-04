@@ -23,6 +23,24 @@
       "slug": "supreme",
       "count": 2,
       "image": "/sneakers/supreme/supreme-sneaker.jpg"
+    },
+    {
+      "name": "Onitsuka",
+      "slug": "onitsuka",
+      "count": 4,
+      "image": "/sneakers/onitsuka/onitsuka-sneaker.jpg"
+    },
+    {
+      "name": "New Balance",
+      "slug": "newbalance",
+      "count": 4,
+      "image": "/sneakers/newbalance/newbalance.webp"
+    },
+    {
+      "name": "On",
+      "slug": "on",
+      "count": 4,
+      "image": "/sneakers/on/on.avif"
     }
   ]
 }

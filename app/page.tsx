@@ -1,8 +1,11 @@
+  // @ts-nocheck
 "use client"
 
 import { useState, useEffect } from "react"
 import Link from "next/link"
 import Image from "next/image"
+import { Orbitron } from 'next/font/google'
+const orbitron = Orbitron({ subsets: ['latin-ext'], weight: ['400', '700', '900'] })
 
 interface Category {
   name: string
@@ -42,13 +45,104 @@ export default function HomePage() {
     <main className="min-h-screen bg-background">
       {/* Header */}
       <header className="border-b border-border bg-card/50 backdrop-blur supports-[backdrop-filter]:bg-card/30">
-        <div className="mx-auto max-w-7xl px-4 py-8">
-          <h1 className="font-black text-4xl md:text-5xl tracking-tight text-foreground text-balance">
+        <div className="mx-auto max-w-7xl px-4 py-2 text-left">
+          <h1 className="font-black text-4xl md:text-2xl tracking-tight text-foreground text-balance" style={{ fontFamily: 'Orbitron, sans-serif' }}>
             SNEAKER HOUSE
           </h1>
           <p className="mt-2 text-muted-foreground text-base">Crafted for Collectors. Curated for Legends</p>
         </div>
       </header>
+      {/* Hero Section with Video Background */}
+      <section className="relative min-h-[600px] md:min-h-[750px] overflow-hidden bg-black">
+      {/* Video Background */}
+        <video
+        autoPlay
+        muted
+        loop
+        playsInline
+        className="absolute inset-0 w-full h-full object-cover"
+      >
+        <source src="/sneakers/sneaker.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+        {/* Gradient Overlay */}
+        <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/50 to-transparent"></div>
+        {/* Content */}
+        <div className="relative z-10 mx-auto max-w-7xl px-4 py-20 md:py-40 flex flex-col justify-center h-full min-h-[600px] md:min-h-[750px]">
+          <div className="max-w-2xl space-y-8">
+            <div className="space-y-4">
+              <div className="inline-block bg-accent/15 backdrop-blur px-4 py-2 rounded-full border border-accent/30">
+                <p className="text-xs font-bold text-accent tracking-widest">PREMIUM SNEAKER COLLECTION</p>
+              </div>
+              <h1 className="text-6xl md:text-7xl lg:text-8xl font-black tracking-tighter text-white text-balance leading-tight">
+                Drop Your
+                <br />
+                <span className="bg-gradient-to-r from-accent to-secondary bg-clip-text text-transparent">Heat</span>
+              </h1>
+              <p className="text-xl text-gray-200 max-w-xl leading-relaxed">
+                Discover the most sought-after sneakers from iconic brands. Jordan, Nike SB, Yeezy, and Supreme – all
+                curated for collectors.
+              </p>
+            </div>           
+            <div className="flex flex-col sm:flex-row gap-4 pt-4">
+              <Link
+                href="#categories"
+                className="inline-flex items-center justify-center px-8 py-4 bg-accent text-white font-bold rounded-lg hover:bg-accent/90 transition-all duration-300 hover:shadow-2xl hover:shadow-accent/50 text-lg"
+              >
+                Explore Collection
+              </Link>
+              <Link
+                href="/contact"
+                className="inline-flex items-center justify-center px-8 py-4 border-2 border-white text-white font-bold rounded-lg hover:bg-white/10 transition-all duration-300 text-lg"
+              >
+                Get in Touch
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+      {/* Crousel of Brands logo*/}
+      {/* Brand Logos Marquee Section */}
+<section className="relative py-12 bg-card border-y border-border overflow-hidden  ">
+  <div className="mx-auto max-w-7xl px-0">
+    <h2 className="text-center text-muted-foreground text-sm font-bold tracking-widest mb-8">
+      FEATURED BRANDS
+    </h2>
+
+    <div className="relative w-full overflow-hidden">
+      {/* Animated track */}
+      <div className="flex animate-marquee space-x-16 invert">
+        {/* Repeat logos */}
+        {[
+          "/brands/nike.png",
+          "/brands/addidas.png",
+          "/brands/air.png",
+          "/brands/onitsuka.png",
+          "/brands/puma.png",
+          "/brands/newbalance.png"
+        ].map((logo, i) => (
+          <div key={i} className="flex-shrink-0 w-40 h-16 flex items-center justify-center opacity-70 hover:opacity-100 transition-opacity">
+            <img src={logo} alt={`Brand ${i}`} className="w-auto h-12 object-contain" />
+          </div>
+        ))}
+
+        {/* Duplicate for seamless loop */}
+        {[
+          "/brands/nike.png",
+          "/brands/air.png",          
+          "/brands/addidas.png",
+          "/brands/onitsuka.png",
+          "/brands/puma.png",
+          "/brands/newbalance.png"
+        ].map((logo, i) => (
+          <div key={`dup-${i}`} className="flex-shrink-0 w-40 h-16 flex items-center justify-center opacity-70 hover:opacity-100 transition-opacity">
+            <img src={logo} alt={`Brand ${i}`} className="w-auto h-12 object-contain" />
+          </div>
+        ))}
+      </div>
+    </div>
+  </div>
+</section>
 
       {/* Content */}
       <div className="mx-auto max-w-7xl px-4 py-12 md:py-16">

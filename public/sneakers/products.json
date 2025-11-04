@@ -89,6 +89,33 @@
       "image": "/sneakers/supreme/supreme-collab.jpg",
       "price": 900,
       "rarity": "rare"
+    },
+    {
+      "id": "11",
+      "name": "Mexico 66",
+      "brand": "onitsuka",
+      "year": 2023,
+      "image": "/sneakers/onitsuka/onitsuka-1.jpg",
+      "price": 1400,
+      "rarity": "rare"
+    },
+    {
+      "id": "12",
+      "name": "Mexico 66 SD",
+      "brand": "onitsuka",
+      "year": 2023,
+      "image": "/sneakers/onitsuka/onitsuka-2.jpg",
+      "price": 1800,
+      "rarity": "ultra-rare"
+    },
+    {
+      "id": "13",
+      "name": "Mexico 66",
+      "brand": "onitsuka",
+      "year": 2022,
+      "image": "/sneakers/onitsuka/onitsuka-3.jpg",
+      "price": 900,
+      "rarity": "rare"
     }
   ]
 }
