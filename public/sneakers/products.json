@@ -6,7 +6,7 @@
       "brand": "jordan",
       "year": 2023,
       "image": "/sneakers/jordan/jordan-1.jpg",
-      "price": 1200,
+      "price": 2800,
       "rarity": "ultra-rare"
     },
     {
@@ -15,7 +15,7 @@
       "brand": "jordan",
       "year": 2023,
       "image": "/sneakers/jordan/jordan-2.jpg",
-      "price": 950,
+      "price": 2800,
       "rarity": "rare"
     },
     {
@@ -24,62 +24,35 @@
       "brand": "jordan",
       "year": 2022,
       "image": "/sneakers/jordan/jordan-3.jpg",
-      "price": 820,
+      "price": 2800,
       "rarity": "common"
     },
     {
       "id": "4",
       "name": "Nike SB Dunk High",
-      "brand": "nike-sb",
+      "brand": "nike",
       "year": 2023,
-      "image": "/sneakers/nike-sb/dunk-high.jpg",
-      "price": 1100,
+      "image": "/sneakers/nike/nike-1.webp",
+      "price": 3300,
       "rarity": "ultra-rare"
     },
     {
       "id": "5",
       "name": "Nike SB Dunk Low Pro",
-      "brand": "nike-sb",
+      "brand": "nike",
       "year": 2023,
-      "image": "/sneakers/nike-sb/dunk-low.jpg",
-      "price": 750,
+      "image": "/sneakers/nike/nike-2.webp",
+      "price": 2850,
       "rarity": "rare"
     },
     {
       "id": "6",
       "name": "Nike SB Janoski",
-      "brand": "nike-sb",
+      "brand": "nike",
       "year": 2022,
-      "image": "/sneakers/nike-sb/janoski.jpg",
-      "price": 600,
+      "image": "/sneakers/nike/nike-4.webp",
+      "price": 2500,
       "rarity": "common"
-    },
-    {
-      "id": "7",
-      "name": "Adidas Yeezy 350 V2",
-      "brand": "yeezy",
-      "year": 2023,
-      "image": "/sneakers/yeezy/yeezy-350.jpg",
-      "price": 2000,
-      "rarity": "ultra-rare"
-    },
-    {
-      "id": "8",
-      "name": "Adidas Yeezy 500",
-      "brand": "yeezy",
-      "year": 2023,
-      "image": "/sneakers/yeezy/yeezy-500.jpg",
-      "price": 1400,
-      "rarity": "rare"
-    },
-    {
-      "id": "9",
-      "name": "Supreme x Nike SB",
-      "brand": "supreme",
-      "year": 2023,
-      "image": "/sneakers/supreme/supreme-nike.jpg",
-      "price": 1800,
-      "rarity": "ultra-rare"
     },
     {
       "id": "10",
@@ -87,7 +60,7 @@
       "brand": "supreme",
       "year": 2022,
       "image": "/sneakers/supreme/supreme-collab.jpg",
-      "price": 900,
+      "price": 9000,
       "rarity": "rare"
     },
     {
@@ -96,7 +69,7 @@
       "brand": "onitsuka",
       "year": 2023,
       "image": "/sneakers/onitsuka/onitsuka-1.jpg",
-      "price": 1400,
+      "price": 2800,
       "rarity": "rare"
     },
     {
@@ -105,7 +78,7 @@
       "brand": "onitsuka",
       "year": 2023,
       "image": "/sneakers/onitsuka/onitsuka-2.jpg",
-      "price": 1800,
+      "price": 3000,
       "rarity": "ultra-rare"
     },
     {
@@ -114,8 +87,26 @@
       "brand": "onitsuka",
       "year": 2022,
       "image": "/sneakers/onitsuka/onitsuka-3.jpg",
-      "price": 900,
+      "price": 3200,
       "rarity": "rare"
-    }
+    },
+    {
+      "id": "14",
+      "name": "On Cloud Running",
+      "brand": "on",
+      "year": 2023,
+      "image": "/sneakers/on/oncloud-2.jpeg",
+      "price": 3000,
+      "rarity": "ultra-rare"
+    },
+    {
+      "id": "15",
+      "name": "On Cloud Running",
+      "brand": "on",
+      "year": 2022,
+      "image": "/sneakers/on/oncloud.jpeg",
+      "price": 3000,
+      "rarity": "rare"
+    }    
   ]
 }

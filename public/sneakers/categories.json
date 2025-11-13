@@ -7,23 +7,18 @@
       "image": "/sneakers/jordan/jordan-sneaker.jpg"
     },
     {
-      "name": "Nike SB",
-      "slug": "nike-sb",
+      "name": "Nike",
+      "slug": "nike",
       "count": 3,
-      "image": "/sneakers/nike-sb/nike-sb-sneaker.jpg"
+      "image": "/sneakers/nike/nike.webp"
     },
     {
       "name": "Yeezy",
       "slug": "yeezy",
-      "count": 2,
+      "count": 0,
       "image": "/sneakers/yeezy/yeezy-sneaker.jpg"
     },
-    {
-      "name": "Supreme",
-      "slug": "supreme",
-      "count": 2,
-      "image": "/sneakers/supreme/supreme-sneaker.jpg"
-    },
+
     {
       "name": "Onitsuka",
       "slug": "onitsuka",
@@ -40,7 +35,19 @@
       "name": "On",
       "slug": "on",
       "count": 4,
-      "image": "/sneakers/on/on.avif"
-    }
+      "image": "/sneakers/on/on.webp"
+    },
+    {
+      "name": "Addidas",
+      "slug": "addidas",
+      "count": 4,
+      "image": "/sneakers/addidas/addidas.webp"
+    },
+    {
+      "name": "Puma",
+      "slug": "puma",
+      "count": 4,
+      "image": "/sneakers/puma/puma.webp"
+    }        
   ]
 }

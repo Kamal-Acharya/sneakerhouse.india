@@ -153,7 +153,7 @@ export default function HomePage() {
         ) : (
           <>
             {/* Categories Grid */}
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6" id="categories">
               {categories.map((category) => (
                 <Link
                   key={category.slug}
@@ -198,9 +198,77 @@ export default function HomePage() {
       </div>
 
       {/* Footer */}
-      <footer className="mt-20 border-t border-border bg-card/30 py-8">
-        <div className="mx-auto max-w-7xl px-4 text-center text-sm text-muted-foreground">
-          <p>Premium Sneaker Collection • Hosted on GitHub</p>
+      <footer className="border-t border-border bg-card/30 py-12">
+        <div className="mx-auto max-w-7xl px-4">
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+            <div>
+              <h3 className="font-bold text-foreground mb-4">SNEAKER HOUSE</h3>
+              <p className="text-sm text-muted-foreground">Premium sneakers for collectors worldwide</p>
+            </div>
+            <div>
+              <h4 className="font-semibold text-foreground mb-4">Quick Links</h4>
+              <ul className="space-y-2 text-sm text-muted-foreground">
+                <li>
+                  <Link href="/" className="hover:text-accent transition-colors">
+                    Home
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/shop" className="hover:text-accent transition-colors">
+                    Shop
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/about" className="hover:text-accent transition-colors">
+                    About
+                  </Link>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h4 className="font-semibold text-foreground mb-4">Support</h4>
+              <ul className="space-y-2 text-sm text-muted-foreground">
+                <li>
+                  <Link href="/contact" className="hover:text-accent transition-colors">
+                    Contact
+                  </Link>
+                </li>
+                <li>
+                  <a href="#" className="hover:text-accent transition-colors">
+                    FAQ
+                  </a>
+                </li>
+                <li>
+                  <a href="#" className="hover:text-accent transition-colors">
+                    Returns
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h4 className="font-semibold text-foreground mb-4">Connect</h4>
+              <ul className="space-y-2 text-sm text-muted-foreground">
+                <li>
+                  <a href="https://www.instagram.com/sneakerhouse.india/" className="hover:text-accent transition-colors">
+                    Instagram
+                  </a>
+                </li>
+                <li>
+                  <a href="https://wa.me/8637358934" className="hover:text-accent transition-colors">
+                    Whatsapp
+                  </a>
+                </li>
+                <li>
+                  <a href="#" className="hover:text-accent transition-colors">
+                    Discord
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          {/* <div className="border-t border-border pt-8 text-center text-sm text-muted-foreground">
+            <p>Premium Sneaker Collection • Hosted on GitHub • 2024</p>
+          </div> */}
         </div>
       </footer>
     </main>
