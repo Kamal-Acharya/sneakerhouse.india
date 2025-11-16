@@ -2,13 +2,23 @@
 "use client"
 
 import type React from "react"
-import { useState } from "react"
 import Link from "next/link"
 import { Orbitron } from "next/font/google"
+import { useEffect, useState } from "react"
 
 const orbitron = Orbitron({ subsets: ["latin-ext"], weight: ["400", "700", "900"] })
 
+const sizes = ["UK 6", "UK 7", "UK 8", "UK 9", "UK 10", "UK 11", "UK 12"]
+
+
 export default function ContactPage() {
+  const [products, setProducts] = useState([])
+
+  useEffect(() => {
+    fetch("/sneakers/products.json")
+      .then((res) => res.json())
+      .then((data) => setProducts(data.sneakers))
+  }, [])
   const [formData, setFormData] = useState({
     name: "",
     phone: "",
@@ -124,35 +134,52 @@ export default function ContactPage() {
 
             {/* Product */}
             <div className="space-y-2">
-              <label htmlFor="product" className="block text-sm font-semibold text-foreground">
-                Sneaker Model / Product Name *
-              </label>
-              <input
-                id="product"
-                type="text"
-                required
-                value={formData.product}
-                onChange={(e) => setFormData({ ...formData, product: e.target.value })}
-                className="w-full px-4 py-2 rounded-lg border border-border bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-accent"
-                placeholder="Nike Dunk Low Panda"
-              />
-            </div>
+            <label
+              htmlFor="product"
+              className="block text-sm font-semibold text-foreground"
+            >
+              Sneaker Model / Product Name *
+            </label>
+
+            <select
+              id="product"
+              required
+              value={formData.product}
+              onChange={(e) => setFormData({ ...formData, product: e.target.value })}
+              className="w-full px-4 py-2 rounded-lg border border-border bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-accent"
+            >
+              <option value="">Select a Product</option>
+
+              {products.map((p: any) => (
+                <option key={p.id} value={p.name}>
+                  {p.name}
+                </option>
+              ))}
+            </select>
+          </div>
 
             {/* Size */}
             <div className="space-y-2">
-              <label htmlFor="size" className="block text-sm font-semibold text-foreground">
-                Size *
-              </label>
-              <input
-                id="size"
-                type="text"
-                required
-                value={formData.size}
-                onChange={(e) => setFormData({ ...formData, size: e.target.value })}
-                className="w-full px-4 py-2 rounded-lg border border-border bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-accent"
-                placeholder="UK 9 / US 10"
-              />
-            </div>
+            <label htmlFor="size" className="block text-sm font-semibold text-foreground">
+              Size *
+            </label>
+
+            <select
+              id="size"
+              required
+              value={formData.size}
+              onChange={(e) => setFormData({ ...formData, size: e.target.value })}
+              className="w-full px-4 py-2 rounded-lg border border-border bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-accent"
+            >
+              <option value="">Select Size</option>
+
+              {sizes.map((s) => (
+                <option key={s} value={s}>
+                  {s}
+                </option>
+              ))}
+            </select>
+          </div>
 
             {/* Message */}
             <div className="space-y-2">
