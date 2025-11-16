@@ -123,3 +123,8 @@
     @apply bg-background text-foreground;
   }
 }
+
+#sneaker-image{
+  max-width: 50%;
+  height: auto;
+}

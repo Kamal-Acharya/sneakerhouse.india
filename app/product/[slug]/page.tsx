@@ -1,14 +1,12 @@
 // app/product/[slug]/page.tsx
 // @ts-nocheck
 
-
 import Image from "next/image"
 import Link from "next/link"
 import productsData from "@/data/products.json"
 import WhatsappButton from "@/components/WhatsappButton"
 
 export default async function ProductPage({ params }: { params: Promise<{ slug: string }> }) {
-
     const handleSubmit = (link: string) => {
         e.preventDefault()
         // Create WhatsApp message
@@ -34,11 +32,11 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
 
   return (
     <div className="max-w-4xl mx-auto p-6">
-      <Link href="/" className="text-blue-500 underline mb-4 block">
+      <Link href="/categories/" className="text-blue-500 underline mb-4 block">
         ← Back
       </Link>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div className="w-full rounded-2xl grid grid-cols-1 md:grid-cols-2 gap-6" id="sneaker-image">
         {/* Main Product Image */}
         <Image
           src={sneaker.image}
@@ -53,15 +51,31 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
           <h1 className="text-3xl font-bold mb-3">{sneaker.name}</h1>
 
           <p className="text-lg text-gray-600 mb-2">Brand: {sneaker.brand}</p>
-          <p className="text-lg text-gray-600 mb-2">Year: {sneaker.year}</p>
 
           <p className="text-2xl font-semibold mt-4">
             ₹{sneaker.price.toLocaleString()}
           </p>
+          
 
           <WhatsappButton
           link={`product/${sneaker.slug}`}
           />
+         {/* Extra Info Section */}
+            <div className="mt-4 space-y-2 text-sm text-gray-700">
+
+            <p className="bg-green-100 text-green-800 px-3 py-2 rounded-lg">
+            💳 <strong>Order Prepaid & Get 15% OFF</strong>
+            </p>
+
+            <p className="bg-yellow-100 text-yellow-800 px-3 py-2 rounded-lg">
+            🚚 <strong>Cash on Delivery</strong> Available Across India
+            </p>
+
+            <p className="bg-blue-100 text-blue-800 px-3 py-2 rounded-lg">
+            📦 <strong>Order with Safety Box</strong> (Guaranteed Sneaker Protection)
+            </p>
+
+            </div>
 
           {/* <button
             onClick={() =>

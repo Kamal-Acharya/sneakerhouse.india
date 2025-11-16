@@ -86,7 +86,7 @@ export default function HomePage() {
             </div>           
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
               <Link
-                href="#categories"
+                href="/categories"
                 className="inline-flex items-center justify-center px-8 py-4 bg-accent text-white font-bold rounded-lg hover:bg-accent/90 transition-all duration-300 hover:shadow-2xl hover:shadow-accent/50 text-lg"
               >
                 Explore Collection

@@ -17,7 +17,12 @@ export default function ContactPage() {
   useEffect(() => {
     fetch("/sneakers/products.json")
       .then((res) => res.json())
-      .then((data) => setProducts(data.sneakers))
+      .then((data) => {
+        const unique = Array.from(
+          new Map(data.sneakers.map((item) => [item.slug, item])).values()
+        )
+        setProducts(unique)
+      })
   }, [])
   const [formData, setFormData] = useState({
     name: "",
@@ -79,7 +84,7 @@ export default function ContactPage() {
           <div className="space-y-4 text-center">
             <h1 className="text-5xl md:text-6xl font-black text-foreground">Get in Touch</h1>
             <p className="text-xl text-muted-foreground">
-              Have questions about a sneaker? Want to place an order or collaborate? Fill out the form below 👇
+              Have questions about a sneaker? Want to enquiry or collaborate? Fill out the form below 👇
             </p>
           </div>
 
@@ -200,7 +205,7 @@ export default function ContactPage() {
               type="submit"
               className="w-full px-8 py-3 bg-accent text-accent-foreground font-bold rounded-lg hover:bg-accent/90 transition-all duration-300 hover:shadow-lg hover:shadow-accent/50"
             >
-              Order On Whatsapp
+              Enquiry On Whatsapp
             </button>
           </form>
 

@@ -137,3 +137,7 @@
   width: max-content;
   animation: marquee 20s linear infinite;
 }
+#sneaker-image{
+  max-width: 90%;
+  height: 50%;
+}

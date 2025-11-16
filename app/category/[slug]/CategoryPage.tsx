@@ -100,7 +100,7 @@ export default function CategoryPage({ slug }: { slug: string }) {
       <header className="border-b border-border bg-card/50 backdrop-blur supports-[backdrop-filter]:bg-card/30 z-10 relative">
         <div className="mx-auto max-w-7xl px-4 py-8">
           <Link
-            href="/"
+            href="/categories"
             className="inline-flex items-center gap-2 mb-4 text-muted-foreground hover:text-foreground transition-colors"
           >
             <ChevronLeft className="w-4 h-4" />
