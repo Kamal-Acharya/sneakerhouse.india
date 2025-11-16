@@ -31,10 +31,10 @@ export default function ContactPage() {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
 
-    const { name, phone, email, product, size, message } = formData
+    const { name, phone, email, product, size } = formData
 
     // Basic validation
-    if (!name || !phone || !product || !size || !message) {
+    if (!name || !phone || !product || !size) {
       alert("Please fill in all required fields before submitting.")
       return
     }
@@ -46,8 +46,7 @@ export default function ContactPage() {
       `*WhatsApp:* ${encodeURIComponent(phone)}%0A` +
       (email ? `*Email:* ${encodeURIComponent(email)}%0A` : "") +
       `*Product:* ${encodeURIComponent(product)}%0A` +
-      `*Size:* ${encodeURIComponent(size)}%0A` +
-      `*Message:* ${encodeURIComponent(message)}`
+      `*Size:* ${encodeURIComponent(size)}%0A` 
 
     // Replace with your WhatsApp number (no + or spaces)
     const whatsappNumber = "8637358934"
@@ -182,7 +181,7 @@ export default function ContactPage() {
           </div>
 
             {/* Message */}
-            <div className="space-y-2">
+            {/* <div className="space-y-2">
               <label htmlFor="message" className="block text-sm font-semibold text-foreground">
                 Message *
               </label>
@@ -195,13 +194,13 @@ export default function ContactPage() {
                 className="w-full px-4 py-2 rounded-lg border border-border bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-accent resize-none"
                 placeholder="Is this sneaker available in UK 9?"
               />
-            </div>
+            </div> */}
 
             <button
               type="submit"
               className="w-full px-8 py-3 bg-accent text-accent-foreground font-bold rounded-lg hover:bg-accent/90 transition-all duration-300 hover:shadow-lg hover:shadow-accent/50"
             >
-              Send via WhatsApp
+              Order On Whatsapp
             </button>
           </form>
 

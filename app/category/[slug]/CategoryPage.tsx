@@ -67,6 +67,7 @@ export default function CategoryPage({ slug }: { slug: string }) {
           image: "/stylish-sneaker.png",
           price: 1200,
           rarity: "ultra-rare",
+          slug: "air-jordan-1-retro-high-og"
         },
         {
           id: "2",
@@ -76,6 +77,7 @@ export default function CategoryPage({ slug }: { slug: string }) {
           image: "/stylish-sneaker.png",
           price: 850,
           rarity: "rare",
+          slug: "classic-silhouette"
         },
       ])
     } finally {
@@ -144,11 +146,11 @@ export default function CategoryPage({ slug }: { slug: string }) {
             {/* Sneakers Grid */}
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {filteredSneakers.map((sneaker) => (
-                <div
-                  key={sneaker.id}
-                  onClick={() => setSelectedSneaker(sneaker)} // 👈 Opens fullscreen
-                  className="cursor-pointer group relative overflow-hidden rounded-lg border border-border bg-card hover:border-accent transition-all duration-300 hover:shadow-lg hover:shadow-accent/20"
-                >
+                <Link
+                key={sneaker.id}
+                href={`/product/${sneaker.slug}`}
+                className="group relative overflow-hidden rounded-lg border border-border bg-card hover:border-accent transition-all duration-300 hover:shadow-lg hover:shadow-accent/20 block"
+              >
                   <div className="relative h-64 md:h-72 overflow-hidden bg-muted">
                     <Image
                       src={sneaker.image || "/placeholder.svg"}
@@ -177,7 +179,7 @@ export default function CategoryPage({ slug }: { slug: string }) {
                       </p>
                     )}
                   </div>
-                </div>
+                </Link>
               ))}
             </div>
 
@@ -189,7 +191,7 @@ export default function CategoryPage({ slug }: { slug: string }) {
       </div>
 
       {/* ✅ Fullscreen Sneaker View */}
-      {selectedSneaker && (
+      {/* {selectedSneaker && (
         <div className="fixed inset-0 bg-black/90 z-50 flex items-center justify-center p-4">
           <button
             onClick={() => setSelectedSneaker(null)}
@@ -206,7 +208,7 @@ export default function CategoryPage({ slug }: { slug: string }) {
             />
           </div>
         </div>
-      )}
+      )} */}
 
       {/* Footer */}
       <footer className="mt-20 border-t border-border bg-card/30 py-8">
