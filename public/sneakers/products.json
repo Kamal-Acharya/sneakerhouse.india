@@ -1,112 +1,220 @@
 {
   "sneakers": [
-    {
-      "id": "1",
-      "name": "Air Jordan 1 Retro High OG",
-      "brand": "jordan",
-      "year": 2023,
-      "image": "/sneakers/jordan/jordan-1.jpg",
-      "price": 2800,
-      "rarity": "ultra-rare"
-    },
-    {
-      "id": "2",
-      "name": "Jordan 3 Retro",
-      "brand": "jordan",
-      "year": 2023,
-      "image": "/sneakers/jordan/jordan-2.jpg",
-      "price": 2800,
-      "rarity": "rare"
-    },
-    {
-      "id": "3",
-      "name": "Jordan 11 Retro Low",
-      "brand": "jordan",
-      "year": 2022,
-      "image": "/sneakers/jordan/jordan-3.jpg",
-      "price": 2800,
-      "rarity": "common"
-    },
-    {
-      "id": "4",
-      "name": "Nike SB Dunk High",
-      "brand": "nike",
-      "year": 2023,
-      "image": "/sneakers/nike/nike-1.webp",
-      "price": 3300,
-      "rarity": "ultra-rare"
-    },
-    {
-      "id": "5",
-      "name": "Nike SB Dunk Low Pro",
-      "brand": "nike",
-      "year": 2023,
-      "image": "/sneakers/nike/nike-2.webp",
-      "price": 2850,
-      "rarity": "rare"
-    },
-    {
-      "id": "6",
-      "name": "Nike SB Janoski",
-      "brand": "nike",
-      "year": 2022,
-      "image": "/sneakers/nike/nike-4.webp",
-      "price": 2500,
-      "rarity": "common"
-    },
-    {
-      "id": "10",
-      "name": "Supreme Collaboration",
-      "brand": "supreme",
-      "year": 2022,
-      "image": "/sneakers/supreme/supreme-collab.jpg",
-      "price": 9000,
-      "rarity": "rare"
-    },
-    {
-      "id": "11",
-      "name": "Mexico 66",
-      "brand": "onitsuka",
-      "year": 2023,
-      "image": "/sneakers/onitsuka/onitsuka-1.jpg",
-      "price": 2800,
-      "rarity": "rare"
-    },
-    {
-      "id": "12",
-      "name": "Mexico 66 SD",
-      "brand": "onitsuka",
-      "year": 2023,
-      "image": "/sneakers/onitsuka/onitsuka-2.jpg",
-      "price": 3000,
-      "rarity": "ultra-rare"
-    },
-    {
-      "id": "13",
-      "name": "Mexico 66",
-      "brand": "onitsuka",
-      "year": 2022,
-      "image": "/sneakers/onitsuka/onitsuka-3.jpg",
-      "price": 3200,
-      "rarity": "rare"
-    },
-    {
-      "id": "14",
-      "name": "On Cloud Running",
-      "brand": "on",
-      "year": 2023,
-      "image": "/sneakers/on/oncloud-2.jpeg",
-      "price": 3000,
-      "rarity": "ultra-rare"
-    },
-    {
-      "id": "15",
-      "name": "On Cloud Running",
-      "brand": "on",
-      "year": 2022,
-      "image": "/sneakers/on/oncloud.jpeg",
-      "price": 3000,
-      "rarity": "rare"
-    }    
+      {
+          "id": "1",
+          "name": "Air Jordan 1 Retro High OG",
+          "brand": "jordan",
+          "year": 2023,
+          "image": "/sneakers/jordan/jordan-1.jpg",
+          "price": 2800,
+          "rarity": "ultra-rare"
+      },
+      {
+          "id": "2",
+          "name": "Jordan 3 Retro",
+          "brand": "jordan",
+          "year": 2023,
+          "image": "/sneakers/jordan/jordan-2.jpg",
+          "price": 2800,
+          "rarity": "rare"
+      },
+      {
+          "id": "3",
+          "name": "Jordan 11 Retro Low",
+          "brand": "jordan",
+          "year": 2022,
+          "image": "/sneakers/jordan/jordan-3.jpg",
+          "price": 2800,
+          "rarity": "common"
+      },
+      {
+          "id": "4",
+          "name": "Nike SB Dunk High",
+          "brand": "nike",
+          "year": 2023,
+          "image": "/sneakers/nike/nike-1.webp",
+          "price": 3300,
+          "rarity": "ultra-rare"
+      },
+      {
+          "id": "5",
+          "name": "Nike SB Dunk Low Pro",
+          "brand": "nike",
+          "year": 2023,
+          "image": "/sneakers/nike/nike-2.webp",
+          "price": 2850,
+          "rarity": "rare"
+      },
+      {
+          "id": "6",
+          "name": "Nike SB Janoski",
+          "brand": "nike",
+          "year": 2022,
+          "image": "/sneakers/nike/nike-4.webp",
+          "price": 2500,
+          "rarity": "common"
+      },
+      {
+          "id": "10",
+          "name": "Supreme Collaboration",
+          "brand": "supreme",
+          "year": 2022,
+          "image": "/sneakers/supreme/supreme-collab.jpg",
+          "price": 9000,
+          "rarity": "rare"
+      },
+      {
+          "id": "11",
+          "name": "Mexico 66",
+          "brand": "onitsuka",
+          "year": 2023,
+          "image": "/sneakers/onitsuka/onitsuka-1.jpg",
+          "price": 2800,
+          "rarity": "rare"
+      },
+      {
+          "id": "12",
+          "name": "Mexico 66 SD",
+          "brand": "onitsuka",
+          "year": 2023,
+          "image": "/sneakers/onitsuka/onitsuka-2.jpg",
+          "price": 3000,
+          "rarity": "ultra-rare"
+      },
+      {
+          "id": "13",
+          "name": "Mexico 66",
+          "brand": "onitsuka",
+          "year": 2022,
+          "image": "/sneakers/onitsuka/onitsuka-3.jpg",
+          "price": 3200,
+          "rarity": "rare"
+      },
+      {
+          "id": "14",
+          "name": "On Cloud Running",
+          "brand": "on",
+          "year": 2023,
+          "image": "/sneakers/on/oncloud-2.jpeg",
+          "price": 3000,
+          "rarity": "ultra-rare"
+      },
+      {
+          "id": "15",
+          "name": "On Cloud Running",
+          "brand": "on",
+          "year": 2022,
+          "image": "/sneakers/on/oncloud.jpeg",
+          "price": 3000,
+          "rarity": "rare"
+      },
+      {
+          "id": "16",
+          "name": "Addidas samba",
+          "brand": "addidas",
+          "year": 2022,
+          "image": "/sneakers/addidas/addidas-1.jpeg",
+          "price": 2600,
+          "rarity": "rare"
+      },
+      {
+          "id": "17",
+          "name": "Addidas samba",
+          "brand": "addidas",
+          "year": 2022,
+          "image": "/sneakers/addidas/addidas-2.jpeg",
+          "price": 2600,
+          "rarity": "rare"
+      },
+      {
+          "id": "18",
+          "name": "Addidas samba",
+          "brand": "addidas",
+          "year": 2022,
+          "image": "/sneakers/addidas/addidas-3.jpeg",
+          "price": 2600,
+          "rarity": "rare"
+      },
+      {
+          "id": "19",
+          "name": "PUMA PALERMO OG WHITE",
+          "brand": "puma",
+          "year": 2020,
+          "image": "/sneakers/puma/puma-1.webp",
+          "price": 2700,
+          "rarity": "common"
+      },
+      {
+          "id": "20",
+          "name": "PUMA SPEED CAT RED",
+          "brand": "puma",
+          "year": 2020,
+          "image": "/sneakers/puma/puma-2.webp",
+          "price": 2800,
+          "rarity": "rare"
+      },
+      {
+          "id": "21",
+          "name": "PUMA SUEDE XL BLACK GREEN",
+          "brand": "puma",
+          "year": 2020,
+          "image": "/sneakers/puma/puma-4.webp",
+          "price": 2600,
+          "rarity": "rare"
+      },
+      {
+          "id": "22",
+          "name": "PUMA SPEED CAT BLACK PINK",
+          "brand": "puma",
+          "year": 2020,
+          "image": "/sneakers/puma/puma-3.webp",
+          "price": 2600,
+          "rarity": "rare"
+      },
+      {
+          "id": "23",
+          "name": "ADIDAS FORUM 84 GREEN",
+          "brand": "addidas",
+          "year": 2020,
+          "image": "/sneakers/addidas/addidas-5.webp",
+          "price": 2699,
+          "rarity": "common"
+      },
+      {
+          "id": "24",
+          "name": "Adidas Forum 84 White Blue",
+          "brand": "addidas",
+          "year": 2020,
+          "image": "/sneakers/addidas/addidas-4.webp",
+          "price": 2799,
+          "rarity": "common"
+      },
+      {
+          "id": "25",
+          "name": "NEW BALANCE 550 UNC",
+          "brand": "newbalance",
+          "year": 2020,
+          "image": "/sneakers/newbalance/nb-3.webp",
+          "price": 2599,
+          "rarity": "commom"
+      },
+      {
+          "id": "26",
+          "name": "NEW BALANCE 550 GREEN",
+          "brand": "newbalance",
+          "year": 2020,
+          "image": "/sneakers/newbalance/nb-1.webp",
+          "price": 2549,
+          "rarity": "common"
+      },
+      {
+          "id": "27",
+          "name": "New balance 530",
+          "brand": "newbalance",
+          "year": 2020,
+          "image": "/sneakers/newbalance/nb-2.webp",
+          "price": 2599,
+          "rarity": "common"
+      }
   ]
 }
