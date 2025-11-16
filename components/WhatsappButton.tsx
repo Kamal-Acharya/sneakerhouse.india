@@ -5,7 +5,7 @@ export default function WhatsappButton({ link }: { link: string }) {
   const handleSubmit = () => {
     const whatsappMessage =
       `Hello Sneaker House 👟%0A%0A` +
-      `I'd like to inquire about this sneaker:%0A ${window.location.origin}/${link}`
+      `I'd like to order this sneaker:%0A ${window.location.origin}/${link}`
 
     const whatsappNumber = "8637358934"
 
